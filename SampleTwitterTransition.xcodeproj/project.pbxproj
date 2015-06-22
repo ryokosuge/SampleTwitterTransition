@@ -13,6 +13,8 @@
 		F83F856C1B37A98D004910AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83F856B1B37A98D004910AC /* Images.xcassets */; };
 		F83F856F1B37A98D004910AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83F856D1B37A98D004910AC /* LaunchScreen.xib */; };
 		F83F857B1B37A98D004910AC /* SampleTwitterTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F857A1B37A98D004910AC /* SampleTwitterTransitionTests.swift */; };
+		F83F85851B37AC41004910AC /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F85841B37AC41004910AC /* ModalViewController.swift */; };
+		F83F85881B37AE86004910AC /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F85871B37AE86004910AC /* ModalTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		F83F85741B37A98D004910AC /* SampleTwitterTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTwitterTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83F85791B37A98D004910AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F83F857A1B37A98D004910AC /* SampleTwitterTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTwitterTransitionTests.swift; sourceTree = "<group>"; };
+		F83F85841B37AC41004910AC /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		F83F85871B37AE86004910AC /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,14 @@
 		F83F85611B37A98D004910AC /* SampleTwitterTransition */ = {
 			isa = PBXGroup;
 			children = (
+				F83F85861B37AE41004910AC /* Transition */,
 				F83F85641B37A98D004910AC /* AppDelegate.swift */,
 				F83F85661B37A98D004910AC /* ViewController.swift */,
 				F83F85681B37A98D004910AC /* Main.storyboard */,
 				F83F856B1B37A98D004910AC /* Images.xcassets */,
 				F83F856D1B37A98D004910AC /* LaunchScreen.xib */,
 				F83F85621B37A98D004910AC /* Supporting Files */,
+				F83F85841B37AC41004910AC /* ModalViewController.swift */,
 			);
 			path = SampleTwitterTransition;
 			sourceTree = "<group>";
@@ -110,6 +116,15 @@
 				F83F85791B37A98D004910AC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F83F85861B37AE41004910AC /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				F83F85871B37AE86004910AC /* ModalTransition.swift */,
+			);
+			name = Transition;
+			path = ../Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83F85881B37AE86004910AC /* ModalTransition.swift in Sources */,
 				F83F85671B37A98D004910AC /* ViewController.swift in Sources */,
+				F83F85851B37AC41004910AC /* ModalViewController.swift in Sources */,
 				F83F85651B37A98D004910AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SampleTwitterTransition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -351,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SampleTwitterTransition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
